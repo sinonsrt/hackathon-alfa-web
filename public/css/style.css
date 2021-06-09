@@ -41,7 +41,15 @@ a {
     margin-left: 15px;
 }
 
-.link-navbar ul {
+.logo-text:hover {
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
     color: #FFFFFF;
 }
 
@@ -143,22 +151,22 @@ a {
   }
 
 /* MAIN */
-.orders-container {
+.veiculos-container {
     background-color: var(--light-color);
   }
 
-  .orders-container h3 {
+  .veiculos-container h3 {
     margin: 0;
   }
 
-  .orders-steps-container {
+  .veiculos-steps-container {
     display: flex;
     justify-content: center;
     background-color: #FFF;
     margin-bottom: 30px;
   }
 
-  .orders-steps-content {
+  .veiculos-steps-content {
     display: flex;
     padding: 25px 0;
     width: 70%;
@@ -166,8 +174,7 @@ a {
 
   .steps-title {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 34px;
+    font-size: 24px;
     letter-spacing: -0.015em;
     color: var(--primary-color);
     margin-right: 100px;
@@ -195,12 +202,12 @@ a {
     margin-right: 10px;
   }
 
-  .orders-list-container {
+  .veiculos-list-container {
     display: flex;
     justify-content: center;
   }
 
-  .orders-list-items {
+  .veiculos-list-items {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 235px);
@@ -208,7 +215,7 @@ a {
     justify-content: space-between;
   }
 
-  .order-card-container {
+  .veiculo-card-container {
     background-color: #FFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -216,18 +223,11 @@ a {
     cursor: pointer;
   }
 
-  .order-card-container.selected {
-    border: 4px solid #008E5B;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-
-  .order-card-container:hover {
+  .veiculo-card-container:hover {
     transform: scale(1.01);
   }
 
-  .order-card-title {
+  .veiculo-card-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
@@ -236,18 +236,14 @@ a {
     text-align: center;
   }
 
-  .order-card-container.selected .order-card-title {
-    color: #008E5B;
-  }
-
-  .order-card-image {
+  .veiculo-card-image {
     border-radius: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100%;
   }
 
-  .order-card-price {
+  .veiculo-card-price {
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
@@ -256,24 +252,20 @@ a {
     text-align: left;
   }
 
-  .order-card-container.selected .order-card-price {
-    color: #008E5B;
-  }
-
-  .order-card-description {
+  .veiculo-card-description {
     border-top: 1px solid #E6E6E6;
     margin-top: 15px;
     padding-top: 15px;
   }
 
-  .order-card-description h3 {
+  .veiculo-card-description h3 {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.015em;
     color: var(--secondary-color);
   }
 
-  .order-card-description p {
+  .veiculo-card-description p {
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -407,7 +399,7 @@ a {
   }
 
   @media only screen and (max-width: 768px) {
-    .orders-steps-content {
+    .veiculos-steps-content {
       display: flex;
       flex-direction: column;
       padding: 0;
@@ -441,6 +433,7 @@ a {
     .main-footer {
         padding-top: 15px;
         padding-bottom: 15px;
+        height: 100px;
         background-color: var(--dark-color);
         font-weight: normal;
         font-size: 12px;
