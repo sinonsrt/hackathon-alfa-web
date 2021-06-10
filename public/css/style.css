@@ -191,23 +191,21 @@ h1, h2, h3 {
 
 /* FOOTER */
 .main-footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 100px;
     background-color: var(--dark-color);
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
-    color: #FFF;
-    }
+    color: var(--light-color);
+}
 
-    .footer-icons {
-    margin-top: 10px;
+.footer-icons {
+    margin-top: 16px;
     display: flex;
     justify-content: center;
-    }
+}
 
-    .footer-icons > * {
+.footer-icons img {
     margin-right: 5px;
-    }
+    width: 48px;
+}

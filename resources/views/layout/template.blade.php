@@ -92,7 +92,7 @@
             Desenvolvido por Carlos Ferreira | Lucas Marchiori | Ayslan Fernandes
 
             <div class="footer-icons">
-
+                <a href="#"><img src="assets/icons/github.svg"></a>
             </div>
         </div>
     </footer>
