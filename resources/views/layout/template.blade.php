@@ -75,8 +75,8 @@
 
                 <nav class="nav">
                     <a class="nav-link" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" href="#">INSTITUCIONAL</a>
-                    <a class="nav-link" href="#">NOVOS</a>
-                    <a class="nav-link" href="#">SEMINOVOS</a>
+                    <a class="nav-link" href="/novos">NOVOS</a>
+                    <a class="nav-link" href="/seminovos">SEMINOVOS</a>
                 </nav>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
