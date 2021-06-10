@@ -87,7 +87,7 @@
 
     </main>
 
-    <footer class="bg-dark mt-5">
+    <footer class="main-footer mt-5">
         <div class="container py-4 text-white text-center">
             Desenvolvido por Carlos Ferreira | Lucas Marchiori | Ayslan Fernandes
 
