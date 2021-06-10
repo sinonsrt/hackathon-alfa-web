@@ -1,8 +1,8 @@
 @extends('layout.template')
 
-@section('content')
+@section('titulo', 'Novos')
 
-<h2 class="mb-5 text-center">Novos</h2>
+@section('content')
 
 <div class="row">
 

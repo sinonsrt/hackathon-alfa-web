@@ -103,6 +103,8 @@
         <div class="py-5 bg-light">
             <div class="container">
 
+                <h2 class="mb-5 text-center">@yield('titulo')</h2>
+
                 @yield('content')
 
             </div>
