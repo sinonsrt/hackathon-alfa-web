@@ -1,6 +1,6 @@
-@extends(layout.template)
+@extends('layout.template')
 
-@section('destaques')
+@section('content')
 
 <h2 class="mb-5 text-center">Destaques</h2>
 

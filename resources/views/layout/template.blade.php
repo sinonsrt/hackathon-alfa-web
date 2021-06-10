@@ -1,12 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.80.0">
 
     <title>CHERRY Veículos</title>
 
@@ -105,7 +102,9 @@
 
         <div class="py-5 bg-light">
             <div class="container">
-                @yield('destaques')
+
+                @yield('content')
+
             </div>
         </div>
 
