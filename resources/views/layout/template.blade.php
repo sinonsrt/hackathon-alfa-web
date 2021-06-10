@@ -12,17 +12,6 @@
     <link href="css/style.css" rel="stylesheet">
 
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -44,20 +33,20 @@
 <body>
 
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
+        <div class="collapse bg-dark sobre-container" id="navbarHeader">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 text-white col-md-7 py-4">
+                    <div class="col-sm-8 col-md-7 py-4">
                         <h4>Sobre Nós</h4>
                         <p>Referência em Umuarama no ramo de veículos novos e seminovos a Cherry trabalha com as principais marcas do brasil.
                             A Cherry Veículos vem conquistando ainda mais o público de Umuarama com excelente e personalizado atendimento e também, claro, com a garantia que você procura. Venha conferir.
                         </p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contato</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Fone: (44)3622-9999</a></li>
-                            <li><a href="#" class="text-white">E-mail: cherry@jacford.com.br</a></li>
+                        <h4>Contato</h4>
+                        <ul list-unstyled">
+                            <li>Fone: (44)3622-9999</li>
+                            <li>E-mail: contato@cherry.com.br</li>
                         </ul>
                     </div>
                 </div>
@@ -88,31 +77,17 @@
 
     <main role="main">
 
-        <section class="jumbotron mb-0">
-            <div class="container w-50">
-                <h3>Pesquisa</h3>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control " placeholder="Modelo ou marca...">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-secondary" type="button" id="button-addon1">Buscar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="container">
 
-        <div class="py-5 bg-light">
-            <div class="container">
+            <h2 class="py-5 text-center">@yield('titulo')</h2>
 
-                <h2 class="mb-5 text-center">@yield('titulo')</h2>
+            @yield('content')
 
-                @yield('content')
-
-            </div>
         </div>
 
     </main>
 
-    <footer class="bg-dark">
+    <footer class="bg-dark mt-5">
         <div class="container py-4 text-white text-center">
             Desenvolvido por Carlos Ferreira | Lucas Marchiori | Ayslan Fernandes
 

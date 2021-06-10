@@ -7,11 +7,13 @@
   --dark-color: #263238;
   --secondary-color: #9E9E9E;
   --light-color: #F5F5F5;
+  --text-color: #616161;
 }
 
 html, body {
   margin: 0;
   padding:0;
+  background-color: var(--light-color);
 }
 
 body {
@@ -51,6 +53,10 @@ a {
 
 .nav-link:hover {
     color: #FFFFFF;
+}
+
+.sobre-container {
+    color: var(--light-color);
 }
 
 
@@ -151,6 +157,10 @@ a {
   }
 
 /* MAIN */
+h1, h2, h3 {
+    color: var(--text-color);
+}
+
 .veiculos-container {
     background-color: var(--light-color);
   }
