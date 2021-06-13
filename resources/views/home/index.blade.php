@@ -29,6 +29,7 @@
 
             <div class="veiculo-card-description">
                 <p>
+                    <b>Ano:</b> {{ $veiculo->anofabricacao }}/{{ $veiculo->anomodelo }} <br>
                     <b>Marca:</b> {{ $veiculo->marca }} <br>
                     <b>Cor:</b> {{ $veiculo->cor }} <br>
                     <b>Opcionais:</b> {{ $veiculo->opcionais }}

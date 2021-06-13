@@ -1,6 +1,6 @@
 @extends('layout.template')
 
-@section('titulo', 'Destaques')
+@section('titulo', 'Seminovos')
 
 @section('content')
 
