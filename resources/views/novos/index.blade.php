@@ -1,98 +1,43 @@
 @extends('layout.template')
 
-@section('titulo', 'Veículos Novos')
+@section('titulo', 'Novos')
 
 @section('content')
 
 <div class="row">
 
+    @foreach($veiculos as $veiculo)
+
     <div class="col-md-3">
-        <div class="veiculo-card-container">
+        <div class="veiculo-card-container mb-4">
             <h3 class="veiculo-card-title">
-                GOL G6 1.0 FLEX 2P
+                {{ $veiculo->modelo }}
             </h3>
 
-            <img src="https:via.placeholder.com/150" class="veiculo-card-image" />
+            <img src="{{ $veiculo->foto }}" class="veiculo-card-image" />
 
-            <h3 class="veiculo-card-price">
-                R$ 35.000,00
-            </h3>
+            <div class="row justify-content-between">
+                <div class="col-auto me-auto">
+                    <h3 class="veiculo-card-price">
+                        R$ {{ $veiculo->valor }}
+                    </h3>
+                </div>
+                <div class="col-auto">
+                    <span class="badge bg-secondary">{{ $veiculo->tipo }}</span>
+                </div>
+            </div>
 
             <div class="veiculo-card-description">
                 <p>
-                    <b>Marca:</b> Volksvagen <br>
-                    <b>Cor:</b> Branca <br>
-                    <b>Opcionais:</b> vidro elétrico, direção hidráulica, ar condicionado, limpador traseiro <br>
+                    <b>Marca:</b> {{ $veiculo->marca }} <br>
+                    <b>Cor:</b> {{ $veiculo->cor }} <br>
+                    <b>Opcionais:</b> {{ $veiculo->opcionais }}
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="col-md-3">
-        <div class="veiculo-card-container">
-            <h3 class="veiculo-card-title">
-                GOL G6 1.0 FLEX 2P
-            </h3>
-
-            <img src="https:via.placeholder.com/150" class="veiculo-card-image" />
-
-            <h3 class="veiculo-card-price">
-                R$ 35.000,00
-            </h3>
-
-            <div class="veiculo-card-description">
-                <p>
-                    <b>Marca:</b> Volksvagen <br>
-                    <b>Cor:</b> Branca <br>
-                    <b>Opcionais:</b> vidro elétrico, direção hidráulica, ar condicionado, limpador traseiro <br>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <div class="veiculo-card-container">
-            <h3 class="veiculo-card-title">
-                GOL G6 1.0 FLEX 2P
-            </h3>
-
-            <img src="https:via.placeholder.com/150" class="veiculo-card-image" />
-
-            <h3 class="veiculo-card-price">
-                R$ 35.000,00
-            </h3>
-
-            <div class="veiculo-card-description">
-                <p>
-                    <b>Marca:</b> Volksvagen <br>
-                    <b>Cor:</b> Branca <br>
-                    <b>Opcionais:</b> vidro elétrico, direção hidráulica, ar condicionado, limpador traseiro <br>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-3">
-        <div class="veiculo-card-container">
-            <h3 class="veiculo-card-title">
-                GOL G6 1.0 FLEX 2P
-            </h3>
-
-            <img src="https:via.placeholder.com/150" class="veiculo-card-image" />
-
-            <h3 class="veiculo-card-price">
-                R$ 35.000,00
-            </h3>
-
-            <div class="veiculo-card-description">
-                <p>
-                    <b>Marca:</b> Volksvagen <br>
-                    <b>Cor:</b> Branca <br>
-                    <b>Opcionais:</b> vidro elétrico, direção hidráulica, ar condicionado, limpador traseiro <br>
-                </p>
-            </div>
-        </div>
-    </div>
+    @endforeach
 
 </div>
 
