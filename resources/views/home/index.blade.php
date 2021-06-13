@@ -11,20 +11,20 @@
     <div class="col-md-3">
         <div class="veiculo-card-container mb-5">
             <h3 class="veiculo-card-title">
-                GOLF 1.8 4P
+                {{ $veiculo->modelo }}
             </h3>
 
-            <img src="https://hackaton-img.s3.us-east-2.amazonaws.com/1623524727214_12057.jpeg" class="veiculo-card-image" />
+            <img src="{{ $veiculo->foto }}" class="veiculo-card-image" />
 
             <h3 class="veiculo-card-price">
-                R$ 72.900,00
+                R$ {{ $veiculo->valor }}
             </h3>
 
             <div class="veiculo-card-description">
                 <p>
-                    <b>Marca:</b> Volksvagen <br>
-                    <b>Cor:</b> Branco <br>
-                    <b>Opcionais:</b> vidro elétrico, direção hidráulica, ar condicionado, limpador traseiro <br>
+                    <b>Marca:</b> {{ $veiculo->marca }} <br>
+                    <b>Cor:</b> {{ $veiculo->cor }} <br>
+                    <b>Opcionais:</b> {{ $veiculo->opcionais }}
                 </p>
             </div>
         </div>
