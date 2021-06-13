@@ -1,0 +1,211 @@
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #da5c5c;
+  --primary-hover-color: #a74b4b;
+  --dark-color: #263238;
+  --secondary-color: #9E9E9E;
+  --light-color: #F5F5F5;
+  --text-color: #616161;
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+  background-color: var(--light-color);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* HEADER */
+.main-navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+.logo-text:hover {
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+}
+
+.sobre-container {
+    color: var(--light-color);
+}
+
+
+/* MAIN */
+h1, h2, h3 {
+    color: var(--text-color);
+}
+
+.veiculos-container {
+    background-color: var(--light-color);
+  }
+
+  .veiculos-container h3 {
+    margin: 0;
+  }
+
+  .veiculos-steps-container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    margin-bottom: 30px;
+  }
+
+  .veiculos-steps-content {
+    display: flex;
+    padding: 25px 0;
+    width: 70%;
+  }
+
+  .steps-title {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    color: var(--primary-color);
+    margin-right: 100px;
+  }
+
+  .steps-items {
+    list-style-type: none;
+  }
+
+  .steps-items li {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    color: var(--secondary-color);
+  }
+
+  .steps-items .steps-number {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: var(--primary-color);
+    margin-right: 10px;
+  }
+
+  .veiculos-list-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .veiculos-list-items {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 235px);
+    grid-gap: 20px 15px;
+    justify-content: space-between;
+  }
+
+  .veiculo-card-container {
+    background-color: #FFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .veiculo-card-container:hover {
+    transform: scale(1.01);
+  }
+
+  .veiculo-card-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  .veiculo-card-image {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .veiculo-card-price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: var(--primary-color);
+    text-align: left;
+  }
+
+  .veiculo-card-description {
+    border-top: 1px solid #E6E6E6;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  .veiculo-card-description h3 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.015em;
+    color: var(--text-color);
+  }
+
+  .veiculo-card-description p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.015em;
+
+    color: var(--text-color);
+  }
+
+
+/* FOOTER */
+.main-footer {
+    background-color: var(--dark-color);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.footer-icons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons img {
+    margin-right: 5px;
+    width: 48px;
+}
