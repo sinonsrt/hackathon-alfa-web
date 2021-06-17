@@ -75,48 +75,6 @@ h1, h2, h3 {
     margin: 0;
   }
 
-  .veiculos-steps-container {
-    display: flex;
-    justify-content: center;
-    background-color: #FFF;
-    margin-bottom: 30px;
-  }
-
-  .veiculos-steps-content {
-    display: flex;
-    padding: 25px 0;
-    width: 70%;
-  }
-
-  .steps-title {
-    font-weight: bold;
-    font-size: 24px;
-    letter-spacing: -0.015em;
-    color: var(--primary-color);
-    margin-right: 100px;
-  }
-
-  .steps-items {
-    list-style-type: none;
-  }
-
-  .steps-items li {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.015em;
-    color: var(--secondary-color);
-  }
-
-  .steps-items .steps-number {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 33px;
-    letter-spacing: -0.015em;
-    color: var(--primary-color);
-    margin-right: 10px;
-  }
 
   .veiculos-list-container {
     display: flex;
@@ -148,7 +106,6 @@ h1, h2, h3 {
     font-size: 18px;
     line-height: 25px;
     color: var(--text-color);
-    text-align: center;
   }
 
   .veiculo-card-image {
@@ -184,6 +141,10 @@ h1, h2, h3 {
     color: var(--text-color);
   }
 
+  .medal-card {
+    color: var(--primary-color);
+  }
+
 
 /* FOOTER */
 .main-footer {
@@ -197,11 +158,8 @@ h1, h2, h3 {
 
 .footer-icons {
     margin-top: 16px;
-    display: flex;
-    justify-content: center;
 }
 
 .footer-icons img {
-    margin-right: 5px;
-    width: 48px;
+    width: 42px;
 }

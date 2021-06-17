@@ -17,7 +17,9 @@ class HomeController extends Controller
                         'cor' => Color::select('cor')->whereColumn('id', 'Vehicles.cor_id'),
                         'marca' => Brand::select('marca')->whereColumn('id', 'Vehicles.marca_id')
                     ]
-                )->get()
+                )
+                ->where('destaque', '=', '1')
+                ->get()
             ]
         );
     }

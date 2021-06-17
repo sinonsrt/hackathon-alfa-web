@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>CHERRY Veículos</title>
+    <title>Cherry Veículos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -64,14 +67,16 @@
                 </a>
 
                 <nav class="nav">
-                    <a class="nav-link" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" href="#">INSTITUCIONAL</a>
+                    <a class="nav-link" href="/">DESTAQUES</a>
                     <a class="nav-link" href="/novos">NOVOS</a>
                     <a class="nav-link" href="/seminovos">SEMINOVOS</a>
+                    <a class="nav-link text-light" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" href="#">SOBRE</a>
                 </nav>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a href="http://localhost:3000/login" target="blank" class="text-light">
+                    <span>Área Restrita</span>
+                    <i class="fas fa-lock"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -90,10 +95,27 @@
 
     <footer class="main-footer mt-5">
         <div class="container py-4 text-white text-center">
-            Desenvolvido por Carlos Ferreira | Lucas Marchiori | Ayslan Fernandes
+            <h6 class="mt-3">Desenvolvido por Carlos H. Ferreira | Lucas Marchiori | Ayslan Fernandes</h6>
 
-            <div class="footer-icons">
-                <a href="#"><img src="assets/icons/github.svg"></a>
+            <div class="icons-container d-flex justify-content-center mt-3">
+                <div class="footer-icons">
+                    <a href="https://github.com/sinonsrt/hackathon-alfa-web" target="blank" class="text-light">
+                        <img src="assets/icons/github.svg">
+                        <p class="py-1">Web</p>
+                    </a>
+                </div>
+                <div class="footer-icons mx-4">
+                    <a href="https://github.com/sinonsrt/hackathon-alfa-admin" target="blank" class="text-light">
+                        <img src="assets/icons/github.svg">
+                        <p class="py-1">Admin</p>
+                    </a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://github.com/ayslanPurunga/hackathon_app_cherry" target="blank" class="text-light">
+                        <img src="assets/icons/github.svg">
+                        <p class="py-1">App</p>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
