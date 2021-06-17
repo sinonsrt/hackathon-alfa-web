@@ -10,20 +10,27 @@
 
     <div class="col-md-3">
         <div class="veiculo-card-container mb-4">
-            <h3 class="veiculo-card-title">
-                {{ $veiculo->modelo }}
-            </h3>
+            <div class="row">
+                <div class="col">
+                    <h3 class="veiculo-card-title">
+                        {{ $veiculo->modelo }}
+                    </h3>
+                </div>
+                <div class="col-auto medal-card">
+                    <i class="{{ $veiculo->destaque ? 'fas fa-medal' : '' }}"></i>
+                </div>
+            </div>
 
             <img src="{{ $veiculo->foto }}" class="veiculo-card-image" />
 
             <div class="row justify-content-between">
                 <div class="col-auto me-auto">
                     <h3 class="veiculo-card-price">
-                        R$ {{ $veiculo->valor }}
+                        R$ {{ substr_replace($veiculo->valor, ".", "-3", "-3") }}
                     </h3>
                 </div>
                 <div class="col-auto">
-                    <span class="badge bg-secondary">{{ $veiculo->tipo }}</span>
+                    <span class="badge {{$veiculo->tipo == 'Novo' ? 'bg-success' : 'bg-info'}}">{{ $veiculo->tipo }}</span>
                 </div>
             </div>
 
